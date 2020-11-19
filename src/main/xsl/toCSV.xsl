@@ -19,7 +19,7 @@
             <!--
             CARD_SET
             1463: 新参デーモンハンター
-            1466: サイラス
+            1466: ダークムーン・フェアへの招待状
             -->
             <xsl:variable name="cardSet" select="number(Tag[@name='CARD_SET']/@value)"/>
 
