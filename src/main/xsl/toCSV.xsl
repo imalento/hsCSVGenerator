@@ -6,7 +6,7 @@
 
     <xsl:strip-space elements="*"/>
     <xsl:template match="/">
-        <xsl:text>Id,Numbers,NameJa,NameEn,Cost,Attack,Health,Durability,Text,Standard,Set,Rarity,Class,Type
+        <xsl:text>Id,Numbers,NameJa,NameEn,Cost,Attack,Health,Durability,CardText,Standard,CardSet,Rarity,CardClass,CardType
 </xsl:text>
         <xsl:apply-templates/>
     </xsl:template>
