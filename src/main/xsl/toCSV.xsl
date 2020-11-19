@@ -36,15 +36,15 @@
             or $cardSet=1443
             or $cardSet=1463
             or $cardSet=1466">
-                        <xsl:value-of select="true()"/>
+                        <xsl:value-of select="number(1)"/>
                     </xsl:when>
                     <xsl:otherwise>
-                        <xsl:value-of select="false()"/>
+                        <xsl:value-of select="number(0)"/>
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:variable>
 
-            <xsl:if test="$standard='true' or 1=1">
+            <xsl:if test="$standard=1 or 1=1">
 
                 <xsl:variable name="id" select="number(@ID)"/>
 
