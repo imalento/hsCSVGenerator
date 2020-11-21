@@ -54,9 +54,24 @@
                 CARDTYPE
                   3: Hero
                   4: Minion
+		  5: Spell
                   7: Weapon
                 -->
                 <xsl:variable name="cardType" select="number(Tag[@name='CARDTYPE']/@value)"/>
+		<!--
+		    CLASS
+		    2: Druid
+		    3: Hunter
+		    4: Mage
+		    5: Paladin
+		    6: Priest
+		    7: Rogue
+		    8: Shaman
+		    9: Warlock
+		    10: Warrior
+		    12: Neutral
+		    14: DemonHunter
+		-->
                 <xsl:variable name="cardClass" select="number(Tag[@name='CLASS']/@value)"/>
 
                 <xsl:variable name="cost">
