@@ -20,22 +20,24 @@
             CARD_SET
             1463: 新参デーモンハンター
             1466: ダークムーン・フェアへの招待状
+
+            1637: コアセット
+            1525: 荒ぶる大地の強者たち (Forged in the Barrens)
+            1578: 風集うストームウィンド (United in Stormwind)
+            1626: 烈戦のアルタラック (Fractured in Alterac Valley)
+            1658: 深淵に眠る海底都市 (Voyage to the Sunken City)
+            1691: ナスリア城殺人事件 (Murder at Castle Nathria)
             -->
             <xsl:variable name="cardSet" select="number(Tag[@name='CARD_SET']/@value)"/>
 
             <xsl:variable name="standard">
                 <xsl:choose>
-                    <xsl:when test="$cardSet=2
-            or $cardSet=3
-            or $cardSet=1130
-            or $cardSet=1158
-            or $cardSet=1347
-            or $cardSet=1403
-            or $cardSet=1403
-            or $cardSet=1414
-            or $cardSet=1443
-            or $cardSet=1463
-            or $cardSet=1466">
+                    <xsl:when test="$cardSet=1637
+            or $cardSet=1525
+            or $cardSet=1578
+            or $cardSet=1626
+            or $cardSet=1658
+            or $cardSet=1691">
                         <xsl:value-of select="number(1)"/>
                     </xsl:when>
                     <xsl:otherwise>
